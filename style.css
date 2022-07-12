@@ -1,0 +1,130 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kumbh "Sans";
+    position: fixed;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img#logo {
+    /* width: 50%; */
+    position: relative;
+    left: -150%;
+    margin-top: 37px;
+}
+
+#avatar {
+    max-width: 45px;
+    padding-left: 10px;
+}
+
+
+.left {
+    margin-top: -40px;
+    position: relative;
+    right: -220%;
+}
+
+#chart {
+    margin-bottom: 11px;
+    width: 16px;
+    margin-right: 33px;
+
+}
+
+img#avatar {
+    margin-top: -2px;
+}
+
+.list ul {
+    margin-top: -35px;
+    margin-left: -130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: -30%;
+}
+
+.list ul li {
+    padding: 15px;
+    list-style: none;
+}
+
+@media screen and (max-width: 1240px) {
+    body {
+        background-color: red;
+    }
+
+    img#logo {
+        /* width: 50%; */
+        position: relative;
+        left: -90%;
+        margin-top: 37px;
+    }
+
+    #avatar {
+        max-width: 45px;
+        padding-left: 10px;
+    }
+
+
+    .left {
+        margin-top: -40px;
+        position: relative;
+        right: -150%;
+    }
+
+    #chart {
+        margin-bottom: 11px;
+        width: 16px;
+        margin-right: 33px;
+
+    }
+
+    img#avatar {
+        margin-top: -4px;
+    }
+
+    .list ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        left: 30%;
+    }
+
+    .list ul li {
+        padding: 15px;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-color: rgb(77, 18, 18);
+    }
+}
