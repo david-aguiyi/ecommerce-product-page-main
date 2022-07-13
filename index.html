@@ -7,35 +7,30 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css">
   <title>E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="nav-header">
     <nav>
-      <img src="images/logo.svg">
-      <ul>
-        <li>Collections</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-      <img src="images/icon-cart.svg">
-      <img src="images/image-avatar.png">
+      <img id="logo" src="images/logo.svg">
+      <div class="list">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="left">
+        <img id="chart" src="images/icon-cart.svg">
+        <img id="avatar" src="images/image-avatar.png">
+      </div>
     </nav>
   </div>
 
@@ -44,8 +39,7 @@
   Fall Limited Edition Sneakers
 
   These low-profile sneakers are your perfect casual wear companion. Featuring a
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
+  durable rubber outer sole, they'll withstand everything the weather can offer.
   $125.00
   50%
   $250.00
