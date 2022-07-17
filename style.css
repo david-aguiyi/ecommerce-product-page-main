@@ -1,5 +1,11 @@
 @import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
+:root {
+    --paleorange-color: hsl(25, 100%, 94%);
+    --orange-color: hsl(26, 100%, 55%);
+    --lightgray: hsl(223, 64%, 98%);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +13,7 @@
 }
 
 body {
+    user-select: none;
     font-family: 'Kumbh Sans', sans-serif;
     position: fixed;
 }
@@ -53,12 +60,15 @@ img#logo {
     margin-bottom: 11px;
     width: 16px;
     margin-right: 33px;
-
+    cursor: pointer;
 }
 
 img#avatar {
     margin-top: -2px;
+    cursor: pointer;
 }
+
+
 
 .list ul {
     margin-top: -35px;
@@ -73,6 +83,7 @@ img#avatar {
 }
 
 .list ul li {
+    cursor: pointer;
     padding: 15px;
     list-style: none;
 }
@@ -95,6 +106,12 @@ img#pro-1 {
     width: 80px;
     margin: 10px;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+.thumbpic img:hover {
+    /* border: 2px solid var(--orange-color); */
+    opacity: 0.5;
 }
 
 .right {
@@ -133,6 +150,7 @@ img#pro-1 {
 }
 
 .prices #main-price {
+    font-family: sans-serif;
     font-size: 25px;
     color: hsl(220, 13%, 13%);
     /* margin-right: 20px; */
@@ -176,6 +194,15 @@ img#pro-1 {
     border-radius: 10px;
     font-weight: 700;
     margin-top: 30px;
+
+}
+
+#plus {
+    cursor: pointer;
+}
+
+#minus {
+    cursor: pointer;
 }
 
 .button {
@@ -191,6 +218,7 @@ img#pro-1 {
     outline: none;
     background-color: hsl(26, 100%, 55%);
     color: white;
+    cursor: pointer;
 }
 
 .button img {
@@ -199,6 +227,25 @@ img#pro-1 {
     margin-right: 15px;
 }
 
+.button:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-color: rgb(77, 18, 18);
+    }
+
+    img#pro-1 {
+        width: 60vh;
+        margin-left: -0px;
+        /* height: 100v; */
+        border-radius: 0%;
+        /* margin-top: -333px; */
+        /* border-radius: none; */
+    }
+
+}
 
 @media screen and (max-width: 1500px) {
 
@@ -262,11 +309,5 @@ img#pro-1 {
         right: -40%;
         margin-top: -40px;
         height: 40px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    body {
-        background-color: rgb(77, 18, 18);
     }
 }
