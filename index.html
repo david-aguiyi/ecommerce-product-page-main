@@ -11,7 +11,7 @@
   <title>E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -65,9 +65,13 @@
 
     <div>
       <div class="counter">
-        <img src="images/icon-minus.svg" id="minus" alt="icon-minus">
+        <button class="btn-counter" id="minus">
+          <img src="images/icon-minus.svg" id="minus" alt="icon-minus">
+        </button>
         <div class="rcounter">0</div>
-        <img src="images/icon-plus.svg" id="plus" alt="icon-plus">
+        <button class="btn-counter">
+          <img src="images/icon-plus.svg" id="plus" alt="icon-plus">
+        </button>
       </div>
       <div class="button">
 
